@@ -15,53 +15,59 @@ By completing this project, you’ll demonstrate your proficiency with CSS metho
 ### Project Instructions
 
 1. **Starter Code**:
-    - Download and unzip the provided [starter code](https://github.com/udacity/cd14106-project-starter-code), which includes:
-        - **Dist Folder**: Where your compiled CSS file (main.css) will live.
-        - **Src Folder**:
-            - `img`: Store all image files here. This folder has a placeholder image for your Introduction banner. You're welcome to use it, but are encouraged to find your own image, which better reflects your personality.
-            - `scss_less`: Store all CSS preprocessor folders and files here. Rename this folder to match the preprocessor you are using (`scss` or `less`).
-    - Download the wireframes to guide the website layout for desktop and mobile views.
+
+   - Download and unzip the provided [starter code](https://github.com/udacity/cd14106-project-starter-code), which includes:
+     - **Dist Folder**: Where your compiled CSS file (main.css) will live.
+     - **Src Folder**:
+       - `img`: Store all image files here. This folder has a placeholder image for your Introduction banner. You're welcome to use it, but are encouraged to find your own image, which better reflects your personality.
+       - `scss_less`: Store all CSS preprocessor folders and files here. Rename this folder to match the preprocessor you are using (`scss` or `less`).
+   - Download the wireframes to guide the website layout for desktop and mobile views.
 
 2. **Folder Structure**:
-    - As per BEM methodology, your `scss` or `less` folder will contain `base`, `blocks`, and `utils` folders with a primary stylesheet that matches the name (see example folder structure below):
-        - **Base**: Contains foundational styles such as resets, typography, and general element styles (e.g., for body, headings, links).
-        - **Blocks**: Houses styles for individual components, each in its own file, following the BEM methodology (e.g., `button.scss`, `header.scss`).
-        - **Utils**: Includes reusable helper styles like variables, mixins, and utility classes that support the design system.
-    - Compile all preprocessor files into a single `main.css` file inside the `dist` folder.
+
+   - As per BEM methodology, your `scss` or `less` folder will contain `base`, `blocks`, and `utils` folders with a primary stylesheet that matches the name (see example folder structure below):
+     - **Base**: Contains foundational styles such as resets, typography, and general element styles (e.g., for body, headings, links).
+     - **Blocks**: Houses styles for individual components, each in its own file, following the BEM methodology (e.g., `button.scss`, `header.scss`).
+     - **Utils**: Includes reusable helper styles like variables, mixins, and utility classes that support the design system.
+   - Compile all preprocessor files into a single `main.css` file inside the `dist` folder.
 
 3. **Intro Banner**:
-    - **Content**:
-        - Include a background image for the banner.
-        - Add a bio section with:
-            - A profile image.
-            - A main heading (e.g., "[Your Name]'s Web Development Portfolio").
-            - A short paragraph describing yourself.
-        - **Note:** If you don't feel comfortable using your own photo, you can use a placeholder image for the purpose of this project. Using a professional headshot can positively contribute to a developer's personal branding, but you don't have to make that decision just yet.
-    - **Responsive Behavior**:
-        - Align the profile image and text content side by side on larger screens.
-        - Stack the profile image above the text content on mobile.
+
+   - **Content**:
+     - Include a background image for the banner.
+     - Add a bio section with:
+       - A profile image.
+       - A main heading (e.g., "[Your Name]'s Web Development Portfolio").
+       - A short paragraph describing yourself.
+     - **Note:** If you don't feel comfortable using your own photo, you can use a placeholder image for the purpose of this project. Using a professional headshot can positively contribute to a developer's personal branding, but you don't have to make that decision just yet.
+   - **Responsive Behavior**:
+     - Align the profile image and text content side by side on larger screens.
+     - Stack the profile image above the text content on mobile.
 
 4. **Latest Projects Section**:
-    - **Content**:
-        - Include a heading (e.g., "Latest Projects").
-        - Add three project cards, each with:
-            - An image (placeholder images are fine).
-            - A title.
-            - A short description.
-        - Add a centered button below the cards that would link to a projects page.
-    - **Design**:
-        - Ensure the cards are equal in width and height.
-        - Apply hover or tabbing transitions to project cards.
+
+   - **Content**:
+     - Include a heading (e.g., "Latest Projects").
+     - Add three project cards, each with:
+       - An image (placeholder images are fine).
+       - A title.
+       - A short description.
+     - Add a centered button below the cards that would link to a projects page.
+   - **Design**:
+     - Ensure the cards are equal in width and height.
+     - Apply hover or tabbing transitions to project cards.
 
 5. **Navigation Header**:
-    - Create a fixed navbar with projects, skills, resume, and contact links.
-    - The navbar should:
-        - Stick to the top of the page and shrink in height on scroll.
-        - Display links on desktop and optionally collapse into a mobile-friendly "burger" menu for smaller screens.
-        - **Note:** If you choose not to incorporate a burger menu into your mobile view, keep in mind that you still need to adhere to responsiveness standards and ensure that your links do not overflow beyond the width of the header.
+
+   - Create a fixed navbar with projects, skills, resume, and contact links.
+   - The navbar should:
+     - Stick to the top of the page and shrink in height on scroll.
+     - Display links on desktop and optionally collapse into a mobile-friendly "burger" menu for smaller screens.
+     - **Note:** If you choose not to incorporate a burger menu into your mobile view, keep in mind that you still need to adhere to responsiveness standards and ensure that your links do not overflow beyond the width of the header.
 
 6. **Footer**:
-    - Create a footer at the bottom of your page with copyright information. (e.g. `&copy; [Your full name] 2025`)
+
+   - Create a footer at the bottom of your page with copyright information. (e.g. `&copy; [Your full name] 2025`)
 
 7. **Accessibility**:
 
@@ -73,7 +79,7 @@ Meet the A and AA accessibility standards outlined in the provided checklist.
 src
 ├── index.html
 ├── scss
-│     ├── base 
+│     ├── base
 │     │   ├── _resets.scss
 │     │   └── base.scss
 │     ├── blocks
@@ -81,7 +87,7 @@ src
 │     │   ├── _header.scss
 │     │   ├── _any_block_partial.scss
 │     │   └── blocks.scss
-│     └── utils 
+│     └── utils
 │         ├── _mixins.scss
 │         ├── _variables.scss
 │         └── utils.scss
@@ -90,16 +96,15 @@ src
 ### Submission Instructions
 
 1. **Submission**:
-    - Submit the entire project, including:
-        - `dist`: Compiled main.css file.
-        - `src`:
-            - `img`: Any images used in the project.
-            - `scss`/`less`: All preprocessor files and folders.
-            - `index.html`: HTML file containing your web components.
-            - `package.json`: For reviewers to install dependencies if needed.
+   - Submit the entire project, including:
+     - `dist`: Compiled main.css file.
+     - `src`:
+       - `img`: Any images used in the project.
+       - `scss`/`less`: All preprocessor files and folders.
+       - `index.html`: HTML file containing your web components.
+       - `package.json`: For reviewers to install dependencies if needed.
 
 Zip the project folder as `[first_name_lastname]_homepage` and upload it.
-
 
 ## Organizing Utilities with BEM
 
@@ -124,8 +129,8 @@ This approach uses a single file (`utils.scss` or `utils.less`) to aggregate all
 @use '../utils/utils';
 
 .header {
-          background-color: utils.$primary-color;
-          @include utils.flex-center;
+  background-color: utils.$primary-color;
+  @include utils.flex-center;
 }
 ```
 
@@ -144,8 +149,8 @@ This approach uses a single file (`utils.scss` or `utils.less`) to aggregate all
 @import '../utils/utils';
 
 .header {
-          background-color: @primary-color;
-          .flex-center();
+  background-color: @primary-color;
+  .flex-center();
 }
 ```
 
@@ -154,6 +159,7 @@ This approach uses a single file (`utils.scss` or `utils.less`) to aggregate all
 With the granular approach, each block file directly imports the specific utility files it needs.
 
 #### SCSS Example
+
 In your block file (e.g., `_header.scss`):
 
 ```scss
@@ -161,12 +167,13 @@ In your block file (e.g., `_header.scss`):
 @use '../utils/mixins';
 
 .header {
-      background-color: _variables.$primary-color;
-      @include _mixins.flex-center;
+  background-color: _variables.$primary-color;
+  @include _mixins.flex-center;
 }
 ```
 
 #### Less Example
+
 In your block file (e.g., `header.less`):
 
 ```less
@@ -174,8 +181,8 @@ In your block file (e.g., `header.less`):
 @import '../utils/mixins';
 
 .header {
-      background-color: @primary-color;
-      .flex-center();
+  background-color: @primary-color;
+  .flex-center();
 }
 ```
 
@@ -200,16 +207,16 @@ For this project, you are encouraged to implement your own design workflow, but 
 ### 2. Decide on a Visual Theme
 
 - Think about your site's aesthetics:
-    - Will you use a light or dark theme?
-    - What colors will you use for consistency?
-    - How will your buttons look—rounded, flat, or with shadows?
+  - Will you use a light or dark theme?
+  - What colors will you use for consistency?
+  - How will your buttons look—rounded, flat, or with shadows?
 - Apply these choices consistently to maintain a cohesive design.
 
 ### 3. Set Up Your Project
 
 - Clone or download the starter project and set up your folder structure:
-    - Create your `base`, `blocks`, and `utils` folders within your scss or less directory.
-    - Within these folders, create your base stylesheets that will use all your future partials, `base.scss`, `blocks.scss`, and `utils.scss`.
+  - Create your `base`, `blocks`, and `utils` folders within your scss or less directory.
+  - Within these folders, create your base stylesheets that will use all your future partials, `base.scss`, `blocks.scss`, and `utils.scss`.
 - Compile your CSS into a `main.css` file. Ensure that it compiles directly into the `dist` folder.
 - Use **Live Preview** in Visual Studio Code or a similar tool to view your changes in real-time.
 
@@ -340,7 +347,7 @@ Use this project rubric to understand and assess the project criteria.
                     The BEM element and modifier selectors are declared in a nested format to avoid repetition:
                     <ul>
                         <li>A <code>.block</code> selector should contain all the related <code>&__element</code> selectors.</li>
-                        <li>Modifiers should be nested under their respective blocks and elements, using the &_modifier syntax (e.g., <code>.block__element</code> and <code>.block__element_modifier</code>).</li>
+                        <li>Modifiers should be nested under their respective blocks and elements, using the <code>&_modifier</code> syntax (e.g., <code>.block__element</code> and <code>.block__element_modifier</code>).</li>
                         <li>Avoid deep nesting to maintain readability and ensure maintainable code.</li>
                     </ul>
                 </li>
@@ -348,3 +355,116 @@ Use this project rubric to understand and assess the project criteria.
         </td>
     </tr>
 </table>
+
+### CSS Techniques
+
+<table>
+    <tr>
+        <th>Criteria</th>
+        <th>Submission Requirements</th>
+    </tr>
+    <tr>
+        <td>Implement advanced CSS properties</td>
+        <td>
+            At least one of the following advanced CSS properties is present in the project:
+            <ul>
+                <li>Math Functions (calc)</li>
+                <li>Scroll Snap</li>
+                <li>Inset text color</li>
+                <li>Anchor</li>
+                <li>Color Scheme Media Query</li>
+                <li>Backdrop Filter</li>
+                <li>Min and Max</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Enhance interactivity with CSS animations and transitions</td>
+        <td>
+            <ul>
+                <li>The buttons change background color when hovered over or when clicked/tapped, and this color transition is smooth.</li>
+                <li>Includes at least one other transition or animation technique, such as:
+                    <ul>
+                        <li>Hover transitions (in addition to the buttons, something that affects properties other than color)</li>
+                        <li>Animations defined with <code>@keyframes</code></li>
+                    </ul>
+                </li>
+                <li>Effects are smooth, non-distracting, and align with the design intent</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Incorporate responsive animations and dynamic effects</td>
+        <td>
+            <ul>
+                <li>The <code>nav</code> header needs to minimize its height as the user scrolls down.</li>
+                <li>
+                    In addition to the nav, the project needs to implement at least one more of the following responsive or dynamic animation techniques:
+                    <ul>
+                        <li>On-scroll effects</li>
+                        <li>Animated backgrounds</li>
+                        <li>Turning off animations via media queries</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+### Accessibility
+
+<table>
+    <tr>
+        <th>Criteria</th>
+        <th>Submission Requirements</th>
+    </tr>
+    <tr>
+        <td>Ensure proper semantic HTML and relationships</td>
+        <td>
+            <ul>
+                <li>Webpage uses semantic tags correctly (header, footer, main, section, h1-h6).</li>
+                <li>Heading tags descend in the correct order.</li>
+                <li>Labels are associated with input fields using the for attribute (if applicable).</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Provide accessible non-text content</td>
+        <td>
+            <ul>
+                <li>All images include meaningful <code>alt</code> attributes (or <code>alt=""</code> for decorative images).</li>
+                <li>Icons or links without visible text use <code>aria-label</code> or are wrapped in a visually hidden class (e.g., <code>sr-only</code>).</li>
+                <li>Form buttons have descriptive text or <code>aria-label</code> attributes.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Ensure keyboard and focus accessibility</td>
+        <td>
+            <ul>
+                <li>All functionality is accessible via the keyboard (e.g., tabbing through links and buttons).</li>
+                <li>Focus order is logical and intuitive.</li>
+                <li>Keyboard focus never gets stuck (no keyboard traps).</li>
+                <li>Focused elements are visibly highlighted.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Use color and sensory characteristics accessibly</td>
+        <td>
+            <ul>
+                <li>Color is not the sole method to convey information.</li>
+                <li>Links are distinguishable from surrounding text without relying solely on color.</li>
+                <li>The contrast ratio between text and background is at least 4.5:1.</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+### Suggestions to Make Your Project Stand Out
+
+**Intro animations:** You can have elements animate into existence by fading in or sliding into place once the page loads.
+
+**Other sections:** The suggested navbar items are pages and/or components that one might find in a typical portfolio website. Although a thorough list of projects and a resume should have their own pages, sections such as Skills and Contact could be included on the home page. Consider building them out into their own sections.
+
+**Custom background images:** Custom background images can be found at https://www.pexels.com. They are free and don’t require purchasing or a license. They can also help inspire your overall color theme.
