@@ -1,0 +1,5 @@
+@use "../utils/utils.scss";
+
+main {
+    background-color: utils.$primary-color; //TODO: remove, this is a test
+}

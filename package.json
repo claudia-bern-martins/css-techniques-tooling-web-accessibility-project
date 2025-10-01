@@ -3,7 +3,8 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass --watch src/scss/main.scss:dist/main.css --no-source-map"
     },
     "dependencies": {
         "less-watch-compile": "^2.1.0",
