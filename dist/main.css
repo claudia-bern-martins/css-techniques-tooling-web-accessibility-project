@@ -68,6 +68,14 @@ body {
   padding: 20px;
   margin-left: 10px;
 }
+.bio__about-me__title {
+  text-align: center;
+  margin-top: 0;
+}
+.bio__about-me__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .intro-banner {
   display: flex;

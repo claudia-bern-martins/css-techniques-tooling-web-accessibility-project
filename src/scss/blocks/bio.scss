@@ -41,5 +41,15 @@
         // justify-content: center;
         padding: 20px;
         margin-left: 10px;
+
+        &__title {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: space-evenly;
+        }
     }
 }
