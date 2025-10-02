@@ -1,3 +1,6 @@
-main {
-  background-color: #c3ced4;
+.intro-banner {
+  background-image: url("../src/img/pexels-andreeusebio-31458001.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

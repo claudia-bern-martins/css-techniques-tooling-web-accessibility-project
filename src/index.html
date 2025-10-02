@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="../dist/main.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet">
-</head>
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../dist/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+  </head>
 
-<body id="body">
-  <header class="header">
-    <nav>
-      <ul>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#latest-projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main id="main">
-    <h1>Cláudia's Portfolio</h1> <!--TODO: does this fit the wireframe?-->
-    <section id="bio" class="bio">
-      <img src="" alt="Headshot photo">
-      <h2>Intro Heading</h2>
-      <p>Short blurb about the developer, lorem ipsum, etc.</p>
-      <button>Button</button> <!--TODO: button or a? -->
-      <button>Button</button> <!--TODO: button or a? -->
-    </section>
-    <section id="latest-projects" class="latest-projects">
-      <h2>Latest Projects</h2>
-      <article>
-        <img src="" alt="">
-        <h3>Project 1</h3>
-        <p>Description of Project 1</p>
-      </article>
-      <article> 
-        <img src="" alt="">
-        <h3>Project 2</h3>
-        <p>Description of Project 2</p>
-      </article>
-      <article> 
-        <img src="" alt="">
-        <h3>Project 3</h3>
-        <p>Description of Project 3</p>
-      </article>
-      <button>Other Projects</button> <!--TODO: button or a? -->
-    </section>
-  </main>
-  <footer class="footer">
-    <p>&copy; Ana Cláudia B. Martins 2025</p>
-  </footer>
-</body>
+  <body id="body">
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#latest-projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="intro-banner">
+        <h1>Cláudia's Portfolio</h1>
+        <section id="bio" class="bio">
+          <img src="img/photo.jpg" alt="Headshot photo">
+          <h2>About Me</h2>
+          <p>I am a Portuguese developer striving to stretch my wings and explore new technologies.</p>
+          <a href="#latest-projects">Projects</a> <!--TODO: button or a? -->
+          <a href="mailto:dev.acc.4.claudia.martins@gmail.com">Contact me!</a>
+        </section>
+      </section>
+      <section id="latest-projects" class="latest-projects">
+        <h2>Latest Projects</h2>
+        <article>
+          <img src="img/js-and-the-dom-logo.webp"
+            alt="JavaScript and the DOM project logo depicting a clipboard with a resume on it, writing utensils and coffee cups">
+          <h3>JavaScript and the DOM</h3>
+          <p>Single-page application that interacts with the DOM using JavaScript.</p>
+        </article>
+        <article>
+          <img src="img/web-development-essentials-logo.png"
+            alt="Web Development Essentials project logo depicting a cat and dog minimalistic drawing">
+          <h3>Web Development Essentials</h3>
+          <p>Multi-page website that showcases efficient use of HTML and CSS.</p>
+        </article>
+        <article>
+          <img src="" alt="">
+          <h3>Project 3</h3>
+          <p>Description of Project 3</p>
+        </article>
+        <button>Other Projects</button> <!--TODO: button or a? -->
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; Ana Cláudia B. Martins 2025</p>
+    </footer>
+  </body>
 
 </html>
