@@ -1,8 +1,8 @@
 @use 'card';
+@use '../utils/utils.scss';
 
 .latest-projects {
-    background-color: white;
-    // margin: -0.1rem 0 2rem 0;
+    background-color:  utils.$secondary-bg-color-light;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,9 +12,12 @@
         display: flex;
         gap: 5rem;
         flex-direction: row;
-        // width: 90%;
         flex-wrap: wrap;
         justify-content: center;
         padding: 5px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        background-color: utils.$secondary-bg-color-dark;
     }
 }

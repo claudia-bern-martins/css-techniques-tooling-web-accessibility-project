@@ -1,3 +1,5 @@
+@use "../utils/utils.scss";
+
 .bio {
     max-width: 70%;
     display: flex;
@@ -18,10 +20,14 @@
         position: absolute;
         z-index: -1;
         opacity: 85%;
-        background-color: white;
+        background-color: utils.$secondary-bg-color-light;
         background-size: cover;
         background-position: center;
         border-radius: 15px 5px 15px 5px;
+
+        @media(prefers-color-scheme: dark) {
+            background-color: utils.$secondary-bg-color-dark;
+        }
     }
 
     &__photo {     

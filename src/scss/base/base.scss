@@ -1,11 +1,15 @@
-@use "../utils/utils.scss";
+@use '../utils/utils.scss';
 
 body {
     margin: 0;
     width: 100%;
     font-family: 'Montserrat', 'Raleway', sans-serif;
-    color: utils.$font-color-light;
+    
+}
 
+h1, h2, h3, h4, h5, h6, p, a {
+    color: utils.$font-color-light;
+    
     @media(prefers-color-scheme: dark) {
         color: utils.$font-color-dark;
     }

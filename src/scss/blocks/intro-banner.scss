@@ -21,6 +21,12 @@
         left: 0;
         position: absolute;
         z-index: -1;
+
+        @media (prefers-color-scheme: dark) {
+            background-image: url('../src/img/pexels-andre-ramos-414014-2182552.jpg');
+            opacity: 100%;
+            filter: brightness(40%);
+        }
     }
 
     &__title {

@@ -2,14 +2,18 @@
 @use '_fonts';
 @use '_mixins';
 
+// Light theme variables
 $primary-bg-color-light: colors.$light-orange;
+$secondary-bg-color-light: colors.$off-white;
 $card-bg-color-light: colors.$light-parchment;  
 $card-bd-color-light: colors.$dark-parchment;
 $font-color-light: colors.$black;
 $font-color-secondary-light: colors.$dark-gray;
 
+// Dark theme variables
 $primary-bg-color-dark: colors.$dark-orchid;
-$card-bg-color-dark: colors.$darker-parchment;
-$card-bd-color-dark: colors.$light-parchment;
+$secondary-bg-color-dark: colors.$gray-black;
+$card-bg-color-dark: colors.$dark-purple;
+$card-bd-color-dark: colors.$lilac;
 $font-color-dark: colors.$white;
 $font-color-secondary-dark: colors.$light-gray;
