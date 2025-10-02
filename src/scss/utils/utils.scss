@@ -1,3 +1,15 @@
-$primary-bg-color: #fec76f;
-$card-bg-color: #faf0e6;
-$card-hl-color: #dcb995;
+@use '_colors' as colors;
+@use '_fonts';
+@use '_mixins';
+
+$primary-bg-color-light: colors.$light-orange;
+$card-bg-color-light: colors.$light-parchment;  
+$card-bd-color-light: colors.$dark-parchment;
+$font-color-light: colors.$black;
+$font-color-secondary-light: colors.$dark-gray;
+
+$primary-bg-color-dark: colors.$dark-orchid;
+$card-bg-color-dark: colors.$darker-parchment;
+$card-bd-color-dark: colors.$light-parchment;
+$font-color-dark: colors.$white;
+$font-color-secondary-dark: colors.$light-gray;

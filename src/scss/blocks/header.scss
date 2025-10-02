@@ -1,7 +1,7 @@
 @use "../utils/utils.scss";
 
 .header {
-    background-color: utils.$primary-bg-color;
+    background-color: utils.$primary-bg-color-light;
     position: sticky;
     padding: 0.2rem 0;
     top: -0.5rem;
@@ -29,6 +29,10 @@
         list-style: none;
         display: flex;
         gap: 2rem;
+    }
+
+    @media(prefers-color-scheme: dark) {
+        background-color: utils.$primary-bg-color-dark;
     }
 
     // @keyframes height {

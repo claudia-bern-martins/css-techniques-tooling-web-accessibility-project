@@ -1,8 +1,12 @@
 @use "../utils/utils.scss";
 
 .footer {
-    background-color: utils.$primary-bg-color;
+    background-color: utils.$primary-bg-color-light;
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+
+    @media(prefers-color-scheme: dark) {
+        background-color: utils.$primary-bg-color-dark;
+    }
 }

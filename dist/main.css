@@ -1,7 +1,21 @@
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap") format("truetype"), url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap") format("truetype"), url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
 body {
   margin: 0;
   width: 100%;
-  font-family: sans-serif;
+  font-family: "Montserrat", "Raleway", sans-serif;
+  color: #000000;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ffffff;
+  }
 }
 
 .header {
@@ -31,6 +45,11 @@ body {
   list-style: none;
   display: flex;
   gap: 2rem;
+}
+@media (prefers-color-scheme: dark) {
+  .header {
+    background-color: #561b74;
+  }
 }
 
 .bio {
@@ -117,6 +136,12 @@ body {
   border: 3px solid #dcb995;
   background-color: #faf0e6;
 }
+@media (prefers-color-scheme: dark) {
+  .card {
+    border: 3px solid #faf0e6;
+    background-color: #3d2e12;
+  }
+}
 .card__image img {
   width: 200px;
   height: auto;
@@ -147,4 +172,9 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+}
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: #561b74;
+  }
 }
