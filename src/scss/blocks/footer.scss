@@ -1,0 +1,8 @@
+@use "../utils/utils.scss";
+
+.footer {
+    background-color: utils.$primary-bg-color;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
