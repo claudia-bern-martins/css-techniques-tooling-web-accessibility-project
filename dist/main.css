@@ -228,9 +228,7 @@ a {
   border-radius: 10px;
   font-weight: bold;
   text-decoration: none;
-  transition-property: all, background-color;
-  transition-duration: 0.5s, 0.5s;
-  transition-timing-function: ease-in-out, ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 @media (prefers-color-scheme: dark) {
   .button {
@@ -239,11 +237,11 @@ a {
   }
 }
 .button:hover {
-  background-color: #fec76f;
+  background-color: #fca439;
   cursor: pointer;
 }
 @media (prefers-color-scheme: dark) {
   .button:hover {
-    background-color: #520052;
+    background-color: #800080;
   }
 }
