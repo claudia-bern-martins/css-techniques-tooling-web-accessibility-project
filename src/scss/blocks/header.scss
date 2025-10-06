@@ -23,7 +23,12 @@
 
     &__logo {
         width: 150px;
+
+        @media(prefers-color-scheme: dark) {
+            content: url('../src/img/logo_white.png');
+        }
     }
+
 
     &__nav-list {
         list-style: none;

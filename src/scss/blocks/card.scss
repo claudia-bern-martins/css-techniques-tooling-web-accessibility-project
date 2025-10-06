@@ -10,11 +10,11 @@
     min-width: 250px;
     border-radius: 15px 5px 15px 5px;
     border: 3px solid utils.$card-bd-color-light;
-    background-color: utils.$card-bg-color-light;
+    background-color: utils.$bg-color-light;
 
     @media(prefers-color-scheme: dark) {
         border: 3px solid utils.$card-bd-color-dark;
-        background-color: utils.$card-bg-color-dark;
+        background-color: utils.$bg-color-dark;
     }
 
     &__image {

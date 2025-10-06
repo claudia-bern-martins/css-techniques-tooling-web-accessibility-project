@@ -1,0 +1,31 @@
+@use '../utils/utils.scss';
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: utils.$bg-color-light;
+    border: 2px solid utils.$primary-bg-color-light;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition-property: all, background-color;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease-in-out, ease-in-out;
+
+    @media(prefers-color-scheme: dark) {
+        background-color: utils.$bg-color-dark; //TODO: review colors
+        border-color: utils.$primary-bg-color-dark;
+    }
+
+    &:hover {
+        background-color: utils.$primary-bg-color-light;
+        cursor: pointer;
+
+        @media(prefers-color-scheme: dark) {
+            background-color: utils.$primary-bg-color-dark;
+        }
+    }
+}

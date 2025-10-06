@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Raleway";
-  src: local("Raleway"), url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap") format("truetype"), url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../src/fonts/Montserrat-VariableFont_wght.ttf") format("truetype"), url("../src/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype"), url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap") format("truetype");
 }
 @font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"), url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap") format("truetype"), url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-family: "Raleway";
+  src: local("Raleway"), url("../src/fonts/Raleway-VariableFont_wght.ttf") format("truetype"), url("../src/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype"), url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap") format("truetype");
 }
 body {
   margin: 0;
@@ -12,11 +12,25 @@ body {
   font-family: "Montserrat", "Raleway", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
   color: #000000;
 }
 @media (prefers-color-scheme: dark) {
-  h1, h2, h3, h4, h5, h6, p, a {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a {
     color: #ffffff;
   }
 }
@@ -43,6 +57,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 .header__logo {
   width: 150px;
+}
+@media (prefers-color-scheme: dark) {
+  .header__logo {
+    content: url("../src/img/logo_white.png");
+  }
 }
 .header__nav-list {
   list-style: none;
@@ -102,6 +121,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .bio__about-me__buttons {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .intro-banner {
@@ -154,7 +174,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 @media (prefers-color-scheme: dark) {
   .card {
     border: 3px solid #9e4ad6;
-    background-color: #431a44;
+    background-color: #4f2d52;
   }
 }
 .card__image img {
@@ -194,6 +214,36 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 @media (prefers-color-scheme: dark) {
   .footer {
+    background-color: #520052;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #faf0e6;
+  border: 2px solid #fec76f;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition-property: all, background-color;
+  transition-duration: 0.5s, 0.5s;
+  transition-timing-function: ease-in-out, ease-in-out;
+}
+@media (prefers-color-scheme: dark) {
+  .button {
+    background-color: #4f2d52;
+    border-color: #520052;
+  }
+}
+.button:hover {
+  background-color: #fec76f;
+  cursor: pointer;
+}
+@media (prefers-color-scheme: dark) {
+  .button:hover {
     background-color: #520052;
   }
 }
