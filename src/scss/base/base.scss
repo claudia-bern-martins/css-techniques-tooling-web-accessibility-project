@@ -14,7 +14,12 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+dt,
+dd,
+li,
+span,
+small {
     color: utils.$font-color-light;
 
     @media(prefers-color-scheme: dark) {

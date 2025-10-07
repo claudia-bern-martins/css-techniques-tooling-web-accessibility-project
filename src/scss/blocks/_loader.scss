@@ -1,0 +1,46 @@
+@use '../utils/utils.scss';
+
+.loader {
+    border: 2px solid utils.$bg-color-light; //TODO: review colors
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+
+    @media(prefers-color-scheme: dark) {
+        border-color: utils.$bg-color-dark;
+    }
+
+    &__inner {
+        @for $i from 0 through 100 {
+            @if $i % 10==0 {
+                &--#{$i} {
+                    width: #{$i + '%'};
+                    height: 100%;
+                    border-radius: 10px;
+                    background-color: invert(utils.$border-color-light); //TODO: review colors
+                    border: 1px solid utils.$font-color-light;
+                    animation: loading#{$i} 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+
+                    @keyframes loading#{$i} {
+                        0% {
+                            width: 0%;
+                        }
+
+                        100% {
+                            width: #{$i + '%'};
+                        }
+                    }
+
+                    @media(prefers-color-scheme: dark) {
+                        background-color: invert(utils.$border-color-dark);
+                        border: 1px solid utils.$font-color-dark;
+                    }
+
+                    @media(prefers-reduced-motion: reduce) {
+                        animation: none;
+                    }
+                }
+            }
+        }
+    }
+}

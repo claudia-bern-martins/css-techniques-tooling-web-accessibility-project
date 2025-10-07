@@ -2,7 +2,7 @@
 @use '../utils/utils.scss';
 
 .latest-projects {
-    background-color:  utils.$secondary-bg-color-light;
+    background-color: utils.$secondary-bg-color-light;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +15,11 @@
         flex-wrap: wrap;
         justify-content: center;
         padding: 5px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 2rem;
+        }
     }
 
     @media (prefers-color-scheme: dark) {

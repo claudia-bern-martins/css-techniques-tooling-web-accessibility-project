@@ -1,4 +1,5 @@
 @use "../utils/utils.scss";
+@use "about-me";
 
 .bio {
     max-width: 70%;
@@ -30,29 +31,27 @@
         }
     }
 
-    &__photo {
+    &__img {
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
 
-        img {
-            width: 250px;
-            height: auto;
-            border-radius: 10px;
-        }
     }
 
-    &__about-me {
-        max-width: 50%;
-        padding: 20px;
-        margin-left: 10px;
+    @media (max-width: 1200px) {
+        flex-direction: row;
+        max-width: 90%;
+        gap: 2rem;
 
-        &__title {
-            text-align: center;
-            margin-top: 0;
-        }
+        @media (max-width: 768px) {
+            flex-direction: column;
 
-        &__buttons {
-            display: flex;
-            justify-content: space-evenly;
-            margin-top: 20px;
+            &__img {
+                width: 150px;
+                height: auto;
+                border-radius: 10px;
+            }
+
         }
     }
 }

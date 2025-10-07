@@ -18,10 +18,10 @@
         <img class="header__logo" src="img/logo_black.png" alt="Logo depicting the name Cláudia between colorful brackets">
         <nav role="navigation" aria-label="Main navigation">
           <ul class="header__nav-list">
-            <li class="header__nav-list-item"><a href="#skills">Skills</a></li>
-            <li class="header__nav-list-item"><a href="#latest-projects">Projects</a></li>
-            <li class="header__nav-list-item"><a href="#resume">Resume</a></li>
-            <li class="header__nav-list-item"><a href="#contact">Contact</a></li>
+            <li class="nav-list__item"><a href="#skills">Skills</a></li>
+            <li class="nav-list__item"><a href="#latest-projects">Projects</a></li>
+            <li class="nav-list__item"><a href="#resume">Resume</a></li>
+            <li class="nav-list__item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </section>
@@ -31,18 +31,39 @@
         <h1 class="intro-banner__title">Cláudia's Portfolio</h1>
         <section id="bio" class="bio">
           <section class="bio__photo">
-            <img src="img/picture_white.png" alt="Headshot photo">
+            <img class="bio__img" src="img/picture_white.png" alt="Headshot drawing">
           </section>
-          <section id="about-me" class="bio__about-me">
-            <h2 class="bio__about-me__title">About Me</h2>
+          <section id="about-me" class="about-me">
+            <h2 class="about-me__title">About Me</h2>
             <p>I am a Portuguese developer striving to stretch my wings and explore new technologies.</p> 
             <p>Originally from a back-end background, with Java and PHP as my main strengths, I am now trying my hand at front-end development.</p>
-            <section class="bio__about-me__buttons">
+            <section class="about-me__buttons">
               <a class="button" href="#latest-projects">Projects</a>
               <a class="button" href="mailto:dev.acc.4.claudia.martins@gmail.com">Contact me</a>
             </section>
           </section>
         </section>
+      </section>
+      <section id="skills" class="skills">
+        <h2 class="skills__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item"><span class="skills__item--highlight">PHP</span><div class="loader"><div class="loader__inner--100"></div></div><small>100%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">Java</span><div class="loader"><div class="loader__inner--90"></div></div><small>90%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">Drupal</span><div class="loader"><div class="loader__inner--80"></div></div><small>80%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">Spring Boot</span><div class="loader"><div class="loader__inner--70"></div></div><small>70%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">JUnit</span><div class="loader"><div class="loader__inner--70"></div></div><small>70%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">JavaScript</span><div class="loader"><div class="loader__inner--60"></div></div><small>60%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">CSS</span><div class="loader"><div class="loader__inner--50"></div></div><small>50%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">HTML</span><div class="loader"><div class="loader__inner--50"></div></div><small>50%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">SCSS</span><div class="loader"><div class="loader__inner--40"></div></div><small>40%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">Python</span><div class="loader"><div class="loader__inner--30"></div></div><small>30%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">Selenium</span><div class="loader"><div class="loader__inner--30"></div></div><small>30%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">COBOL</span><div class="loader"><div class="loader__inner--10"></div></div><small>10%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">OpenCV</span><div class="loader"><div class="loader__inner--10"></div></div><small>10%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">TensorFlow</span><div class="loader"><div class="loader__inner--10"></div></div><small>10%</small></li>
+          <li class="skills__item"><span class="skills__item--highlight">TIBCO BusinessWorks</span><div class="loader"><div class="loader__inner--10"></div></div><small>10%</small></li>
+        </ul>
+        <small class="skills__disclaimer">Skill levels are relative and self-assessed</small>
       </section>
       <section id="latest-projects" class="latest-projects">
         <h2>Latest Projects</h2>
@@ -78,8 +99,52 @@
         <a class="button" href="#">Other Projects</a>
       </section>
       <section id="resume" class="resume">
-        <h2>Resume</h2>
-        <p>Download my resume <a href="files/ClaudiaMartins_Resume.pdf" download>here</a>.</p>
+        <h2 class="resume__title--large">Resume</h2>
+        <section class="resume__container">
+          <section class="resume__experience">
+            <h3 class="resume__title--small">Relevant Experience</h3>
+            <dl class="resume__list">
+              <dt class="list__title">Drupal 9/10 developer</dt>
+              <dd class="list__entry--normal">Drupal, PHP</dd>
+              <dd class="list__entry--emphasis">2021/08 - now</dd>
+              <dt class="list__title">Systems integration developer</dt>
+              <dd class="list__entry--normal">TIBCO BusinessWorks 5, COBOL</dd>
+              <dd class="list__entry--emphasis">2019/12 - 2021/08</dd>
+              <dt class="list__title">Drupal 8 developer</dt>
+              <dd class="list__entry--normal">Drupal, PHP</dd>
+              <dd class="list__entry--emphasis">2019/12 - 2019/02</dd>
+              <dt class="list__title">Java 8 developer</dt>
+              <dd class="list__entry--normal">Java, Spring Boot, JUnit, Selenium</dd>
+              <dd class="list__entry--emphasis">2018/07 - 2019/02</dd>
+              <dt class="list__title">Machine learning, Java and Python developer</dt>
+              <dd class="list__entry--normal">Java, Python, Tensorflow, OpenCV</dd>
+              <dd class="list__entry--emphasis">2017/09 - 2018/07</dd>
+            </dl>
+          </section>
+          <section class="resume__education">
+            <h3 class="resume__title--small">Relevant Education</h3>
+            <dl class="resume__list">
+              <dt class="list__title">MSc in Informatics Engineering</dt>
+              <dd class="list__entry--normal">Faculty of Sciences of the University of Lisbon (FCUL), Portugal</dd>
+              <dd class="list__entry--emphasis">2016-2020</dd>
+              <dt class="list__title">BSc in Informatics Engineering</dt>
+              <dd class="list__entry--normal">Faculty of Sciences of the University of Lisbon (FCUL), Portugal</dd>
+              <dd class="list__entry--emphasis">2013-2016</dd>
+            </dl>
+            <h3 class="resume__title--small">Other Education</h3>
+            <dl class="resume__list">
+              <dt class="list__title">MSc in Medicinal Chemistry</dt>
+              <dd class="list__entry--normal">Faculty of Pharmacy of the University of Lisbon (FFUL), Portugal</dd>
+              <dd class="list__entry--emphasis">2011-2013</dd>
+              <dt class="list__title">BSc in Biochemistry</dt>
+              <dd class="list__entry--normal">Faculty of Science and Technology of the NOVA University of Lisbon (FCT-UNL), Portugal</dd>
+              <dd class="list__entry--emphasis">2008-2011</dd>
+            </dl>
+          </section>
+        </section>
+        <section class="resume__download">
+          <p>Download my full resume <a href="files/ClaudiaMartins_Resume.pdf" download>here</a>.</p>
+        </section>
       </section>
     </main>
     <footer class="footer">
