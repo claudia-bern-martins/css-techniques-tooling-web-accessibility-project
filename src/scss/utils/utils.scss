@@ -1,3 +1,4 @@
+@use 'sass:color' as color;
 @use '_colors' as colors;
 @use '_fonts';
 @use '_mixins';
@@ -7,7 +8,7 @@ $primary-bg-color-light: colors.$light-orange;
 $secondary-bg-color-light: colors.$off-white;
 $bg-color-light: colors.$light-parchment;
 $bg-highlight-light: colors.$orange;
-$border-color-light: colors.$dark-parchment;
+$border-color-light: color.invert($primary-bg-color-light);
 $font-color-light: colors.$black;
 $font-color-secondary-light: colors.$dark-gray;
 
@@ -15,8 +16,12 @@ $font-color-secondary-light: colors.$dark-gray;
 $primary-bg-color-dark: colors.$dark-orchid;
 $secondary-bg-color-dark: colors.$gray-black;
 // $tertiary-bg-color-dark: colors.$darker-gray;
-$bg-color-dark: colors.$dark-purple;
+$bg-color-dark: colors.$grey-purple;
 $bg-highlight-dark: colors.$purple;
-$border-color-dark: colors.$lilac;
+$border-color-dark: color.adjust(color.invert($primary-bg-color-dark), $lightness: -45%);
 $font-color-dark: colors.$white;
 $font-color-secondary-dark: colors.$light-gray;
+
+//Form
+$error: colors.$dark-cherry;
+$success: colors.$muted-green;

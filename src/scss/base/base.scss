@@ -4,6 +4,9 @@ body {
     margin: 0;
     width: 100%;
     font-family: 'Montserrat', 'Raleway', sans-serif;
+    scroll-snap-type: y mandatory;
+    scroll-margin-top: 180px !important;
+    scroll-padding-top: 180px !important;
 
 }
 
@@ -19,10 +22,19 @@ dt,
 dd,
 li,
 span,
-small {
+small,
+label {
     color: utils.$font-color-light;
 
     @media(prefers-color-scheme: dark) {
         color: utils.$font-color-dark;
     }
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    padding: 5px;
 }

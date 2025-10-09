@@ -5,15 +5,15 @@
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    background-color: utils.$bg-color-light;
-    border: 2px solid utils.$primary-bg-color-light;
+    background-color: utils.$primary-bg-color-light;
+    border: 4px solid utils.$primary-bg-color-light;
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.4s ease-in-out;
 
     @media(prefers-color-scheme: dark) {
-        background-color: utils.$bg-color-dark; //TODO: review colors
+        background-color: utils.$primary-bg-color-dark; //TODO: review colors
         border-color: utils.$primary-bg-color-dark;
     }
 

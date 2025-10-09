@@ -39,7 +39,7 @@
             <p>Originally from a back-end background, with Java and PHP as my main strengths, I am now trying my hand at front-end development.</p>
             <section class="about-me__buttons">
               <a class="button" href="#latest-projects">Projects</a>
-              <a class="button" href="mailto:dev.acc.4.claudia.martins@gmail.com">Contact me</a>
+              <a class="button" href="https://www.linkedin.com/in/claudia-bernardes-martins/" target="_blank">LinkedIn</a>
             </section>
           </section>
         </section>
@@ -96,7 +96,7 @@
             </section>
           </article>
         </section>
-        <a class="button" href="#">Other Projects</a>
+        <a class="button" href="https://github.com/claudia-bern-martins/">Other Projects</a>
       </section>
       <section id="resume" class="resume">
         <h2 class="resume__title--large">Resume</h2>
@@ -143,8 +143,24 @@
           </section>
         </section>
         <section class="resume__download">
-          <p>Download my full resume <a href="files/ClaudiaMartins_Resume.pdf" download>here</a>.</p>
+          <a class="button" href="files/ClaudiaMartins_Resume.pdf" download>Download my full resume here</a>
         </section>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch, please fill out the form below:</p>
+        <small>(All fields are required)</small>
+        <form id="form" class="contact__form" action="https://formspree.io/f/mgebjvwp" method="POST">
+          <section class="form__personal-info">
+            <label class="form__label" for="name">Name</label>
+            <input class="form__input" type="text" id="name" name="name" required>
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" id="email" name="email" required>
+          </section>
+          <label class="form__label" for="message">Message</label>
+          <textarea class="form__input--big" rows="5" cols="50" id="message" name="message" placeholder="Write your message here" required></textarea>
+          <input id="submit-button" class="button form__button" type="submit" value="Contact me" formaction="mailto:dev.acc.4.claudia.martins@gmail.com">
+        </form>
       </section>
     </main>
     <footer class="footer">

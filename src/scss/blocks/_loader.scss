@@ -17,9 +17,9 @@
                     width: #{$i + '%'};
                     height: 100%;
                     border-radius: 10px;
-                    background-color: invert(utils.$border-color-light); //TODO: review colors
+                    background-color: utils.$border-color-light; //TODO: review colors
                     border: 1px solid utils.$font-color-light;
-                    animation: loading#{$i} 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+                    animation: loading#{$i} 5s ease-in-out infinite;
 
                     @keyframes loading#{$i} {
                         0% {
@@ -32,7 +32,7 @@
                     }
 
                     @media(prefers-color-scheme: dark) {
-                        background-color: invert(utils.$border-color-dark);
+                        background-color: utils.$border-color-dark;
                         border: 1px solid utils.$font-color-dark;
                     }
 
