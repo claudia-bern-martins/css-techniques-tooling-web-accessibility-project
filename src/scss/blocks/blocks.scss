@@ -1,8 +1,15 @@
 @use 'header';
 @use 'intro-banner';
+@use 'about-me';
+@use 'bio';
 @use 'skills';
 @use 'latest-projects';
 @use 'resume';
 @use 'contact';
 @use 'footer';
 @use '_button';
+@use '_card';
+@use '_form';
+@use '_list';
+@use '_loader';
+@use '_nav-list';

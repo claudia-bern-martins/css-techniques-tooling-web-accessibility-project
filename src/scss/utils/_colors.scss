@@ -1,18 +1,39 @@
-$light-orange: #fec76f;
-$orange: #fca439;
-$light-parchment: #fae2cb;
-$dark-parchment: #dcb995;
+@use 'sass:color' as color;
+
+//Color variables
 $black: #000000;
 $gray-black: #111111;
-$dark-gray: #333333;
-$darker-gray: #222222;
-$darker-parchment: #3d2e12;
+$dark-gray: #222222;
 $white: #ffffff;
 $off-white: #f7f7ef;
-$light-gray: #f5f5f5;
+$light-gray: #dddddd;
+$light-parchment: #fae2cb;
+$light-orange: #fec76f;
+$orange: #fca439;
 $dark-orchid: #520052;
-$lilac: #9e4ad6;
 $grey-purple: #443945;
 $purple: #800080;
 $dark-cherry: #6f0145;
 $muted-green: #88a974;
+
+// Light theme variables
+$primary-bg-color-light: $light-orange;
+$secondary-bg-color-light: $off-white;
+$bg-color-light: $light-parchment;
+$bg-highlight-light: $orange;
+$border-color-light: color.adjust(color.invert($primary-bg-color-light), $lightness: 8%);
+$font-color-light: $black;
+
+// Dark theme variables
+$primary-bg-color-dark: $dark-orchid;
+$secondary-bg-color-dark: $gray-black;
+$bg-color-dark: $grey-purple;
+$bg-highlight-dark: $purple;
+$border-color-dark: color.adjust(color.invert($primary-bg-color-dark), $lightness: -52%);
+$font-color-dark: $white;
+
+//Form
+$field-bg-color-light: $light-gray;
+$field-bg-color-dark: $dark-gray;
+$error: $dark-cherry;
+$success: $muted-green;

@@ -1,11 +1,11 @@
 @use '../utils/utils.scss';
-@use '_list';
 
 .resume {
+    @include utils.tertiary-background-color();
+
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    background-color: utils.$bg-color-light;
 
     &__container {
         display: flex;
@@ -20,10 +20,8 @@
 
     &__education,
     &__experience {
-        display: flex;
+        @include utils.flex-center();
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         justify-content: space-evenly;
         max-width: 50%;
 
@@ -44,10 +42,6 @@
             align-self: center;
             text-align: center;
             margin-bottom: 1rem;
-
-            @media(max-width: 768px) {
-                align-self: center;
-            }
         }
     }
 
@@ -55,13 +49,8 @@
         align-self: center;
         margin-top: 2rem;
         border-radius: 10px;
-    }
 
-
-    @media(prefers-color-scheme: dark) {
-        background-color: utils.$bg-color-dark;
-
-        &__download {
+        @media(prefers-color-scheme: dark) {
             border-color: utils.$bg-highlight-dark;
             background-color: utils.$primary-bg-color-dark;
         }

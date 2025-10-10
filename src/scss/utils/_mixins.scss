@@ -1,0 +1,83 @@
+@use './_colors.scss' as colors;
+
+
+@mixin scroll-adjustments() {
+    scroll-margin-top: 70px;
+    scroll-snap-type: y mandatory;
+}
+
+@mixin primary-background-color() {
+    background-color: colors.$primary-bg-color-light;
+
+    @media(prefers-color-scheme: dark) {
+        background-color: colors.$primary-bg-color-dark;
+    }
+}
+
+@mixin secondary-background-color() {
+    background-color: colors.$secondary-bg-color-light;
+
+    @media(prefers-color-scheme: dark) {
+        background-color: colors.$secondary-bg-color-dark;
+    }
+}
+
+@mixin tertiary-background-color() {
+    background-color: colors.$bg-color-light;
+
+    @media(prefers-color-scheme: dark) {
+        background-color: colors.$bg-color-dark;
+    }
+}
+
+@mixin font-color() {
+    color: colors.$font-color-light;
+
+    @media(prefers-color-scheme: dark) {
+        color: colors.$font-color-dark;
+    }
+}
+
+@mixin stylized-background-image($image-path-light, $image-path-dark) {
+
+    @include stylized-background();
+    background-image: url('#{$image-path-light}');
+    opacity: 80%;
+    filter: blur(0.2em);
+    top: -0.2em;
+
+    @media (prefers-color-scheme: dark) {
+        background-image: url('#{$image-path-dark}');
+        opacity: 100%;
+        filter: brightness(40%);
+    }
+}
+
+@mixin stylized-background() {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+}
+
+@mixin stylized-background-color () {
+    @include stylized-background();
+    @include secondary-background-color();
+    @include different-border-radius();
+    opacity: 85%;
+}
+
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin different-border-radius() {
+    border-radius: 15px 5px 15px 5px;
+}

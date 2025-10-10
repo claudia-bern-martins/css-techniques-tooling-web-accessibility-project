@@ -1,34 +1,18 @@
 @use "../utils/utils.scss";
-@use "about-me";
 
 .bio {
-    max-width: 70%;
-    display: flex;
+    @include utils.flex-center();
     gap: 10rem;
+
+    max-width: 70%;
     margin: 2rem;
     position: relative;
     padding: 10px;
-    align-items: center;
-    justify-content: center;
+
     line-height: 1.5rem;
 
     &::before {
-        content: "";
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
-        opacity: 85%;
-        background-color: utils.$secondary-bg-color-light;
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px 5px 15px 5px;
-
-        @media(prefers-color-scheme: dark) {
-            background-color: utils.$secondary-bg-color-dark;
-        }
+        @include utils.stylized-background-color();
     }
 
     &__img {

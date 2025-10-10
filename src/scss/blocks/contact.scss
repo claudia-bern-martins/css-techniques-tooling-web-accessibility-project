@@ -1,26 +1,8 @@
 @use '../utils/utils.scss';
-@use '_form';
 
 .contact {
-    display: flex;
+    @include utils.secondary-background-color();
+    @include utils.flex-center();
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 2rem 1rem;
-    background-color: utils.$secondary-bg-color-light;
-
-    &__form {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        width: 80%;
-
-        @media (max-width: 768px) {
-            width: 90%;
-        }
-    }
-
-    @media(prefers-color-scheme: dark) {
-        background-color: utils.$secondary-bg-color-dark;
-    }
 }

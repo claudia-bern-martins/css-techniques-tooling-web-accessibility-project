@@ -1,7 +1,8 @@
 @use "../utils/utils.scss";
 
 .header {
-    background-color: utils.$primary-bg-color-light;
+    @include utils.primary-background-color();
+
     position: sticky;
     padding: 0.2rem 0;
     top: -0.5rem;
@@ -20,6 +21,13 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 6rem;
+
+        @media (max-width: 768px) {
+            padding: 0 2rem;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
     }
 
     &__logo {
@@ -36,30 +44,4 @@
     }
 
 
-    &__nav-list {
-        list-style: none;
-        display: flex;
-        gap: 2rem;
-        flex-wrap: wrap;
-    }
-
-    @media(prefers-color-scheme: dark) {
-        background-color: utils.$primary-bg-color-dark;
-    }
-
-    @media (max-width: 768px) {
-        &__container {
-            padding: 0 2rem;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        &__nav-list {
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            padding: 0;
-        }
-    }
 }

@@ -1,8 +1,8 @@
-@use '_card';
 @use '../utils/utils.scss';
 
 .latest-projects {
-    background-color: utils.$secondary-bg-color-light;
+    @include utils.secondary-background-color();
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,9 +20,5 @@
             flex-direction: column;
             gap: 2rem;
         }
-    }
-
-    @media (prefers-color-scheme: dark) {
-        background-color: utils.$secondary-bg-color-dark;
     }
 }

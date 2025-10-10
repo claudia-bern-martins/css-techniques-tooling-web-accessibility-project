@@ -5,6 +5,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../dist/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Cláudia Martins, a Portuguese developer specializing in PHP, Java, and web development">
+    <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,60 +19,149 @@
       <section class="header__container">
         <img class="header__logo" src="img/logo_black.png" alt="Logo depicting the name Cláudia between colorful brackets">
         <nav role="navigation" aria-label="Main navigation">
-          <ul class="header__nav-list">
-            <li class="nav-list__item"><a href="#skills">Skills</a></li>
-            <li class="nav-list__item"><a href="#latest-projects">Projects</a></li>
-            <li class="nav-list__item"><a href="#resume">Resume</a></li>
-            <li class="nav-list__item"><a href="#contact">Contact</a></li>
+          <ul class="nav-list">
+            <li class="nav-list__item"><a href="#skills" aria-current="page">Skills</a></li>
+            <li class="nav-list__item"><a href="#latest-projects" aria-current="page">Projects</a></li>
+            <li class="nav-list__item"><a href="#resume" aria-current="page">Resume</a></li>
+            <li class="nav-list__item"><a href="#contact" aria-current="page">Contact</a></li>
           </ul>
         </nav>
       </section>
     </header>
-    <main id="main">
+    <main id="main" role="main">
       <section class="intro-banner">
         <h1 class="intro-banner__title">Cláudia's Portfolio</h1>
         <section id="bio" class="bio">
           <section class="bio__photo">
             <img class="bio__img" src="img/picture_white.png" alt="Headshot drawing">
           </section>
-          <section id="about-me" class="about-me">
-            <h2 class="about-me__title">About Me</h2>
+          <section id="about-me" class="about-me" aria-labelledby="about-me-heading">
+            <h2 class="about-me__title" id="about-me-heading">About Me</h2>
             <p>I am a Portuguese developer striving to stretch my wings and explore new technologies.</p> 
             <p>Originally from a back-end background, with Java and PHP as my main strengths, I am now trying my hand at front-end development.</p>
             <section class="about-me__buttons">
               <a class="button" href="#latest-projects">Projects</a>
-              <a class="button" href="https://www.linkedin.com/in/claudia-bernardes-martins/" target="_blank">LinkedIn</a>
+              <a class="button" href="https://www.linkedin.com/in/claudia-bernardes-martins/" target="_blank" rel="noopener" aria-label="Visit my LinkedIn profile (opens in new tab)">LinkedIn</a>
             </section>
           </section>
         </section>
       </section>
-      <section id="skills" class="skills">
-        <h2 class="skills__title">Skills</h2>
+      <section id="skills" class="skills" aria-labelledby="skills-heading">
+        <h2 class="skills__title" id="skills-heading">Skills</h2>
         <ul class="skills__list">
-          <li class="skills__item"><span class="skills__item--highlight">PHP</span><div class="loader"><div class="loader__inner--100"></div></div><small>100%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">Java</span><div class="loader"><div class="loader__inner--90"></div></div><small>90%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">Drupal</span><div class="loader"><div class="loader__inner--80"></div></div><small>80%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">Spring Boot</span><div class="loader"><div class="loader__inner--70"></div></div><small>70%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">JUnit</span><div class="loader"><div class="loader__inner--70"></div></div><small>70%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">JavaScript</span><div class="loader"><div class="loader__inner--60"></div></div><small>60%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">CSS</span><div class="loader"><div class="loader__inner--50"></div></div><small>50%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">HTML</span><div class="loader"><div class="loader__inner--50"></div></div><small>50%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">SCSS</span><div class="loader"><div class="loader__inner--40"></div></div><small>40%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">Python</span><div class="loader"><div class="loader__inner--30"></div></div><small>30%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">Selenium</span><div class="loader"><div class="loader__inner--30"></div></div><small>30%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">COBOL</span><div class="loader"><div class="loader__inner--10"></div></div><small>10%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">OpenCV</span><div class="loader"><div class="loader__inner--10"></div></div><small>10%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">TensorFlow</span><div class="loader"><div class="loader__inner--10"></div></div><small>10%</small></li>
-          <li class="skills__item"><span class="skills__item--highlight">TIBCO BusinessWorks</span><div class="loader"><div class="loader__inner--10"></div></div><small>10%</small></li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">PHP</span>
+            <div class="loader" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="PHP skill level: 100%">
+              <div class="loader__inner--100"></div>
+            </div>
+            <small>100%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">Java</span>
+            <div class="loader" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Java skill level: 90%">
+              <div class="loader__inner--90"></div>
+            </div>
+            <small>90%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">Drupal</span>
+            <div class="loader" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Drupal skill level: 80%">
+              <div class="loader__inner--80"></div>
+            </div>
+            <small>80%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">Spring Boot</span>
+            <div class="loader" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Spring Boot skill level: 70%">
+              <div class="loader__inner--70"></div>
+            </div><small>70%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">JUnit</span>
+            <div class="loader" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="JUnit skill level: 70%">
+              <div class="loader__inner--70"></div>
+            </div>
+            <small>70%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">JavaScript</span>
+            <div class="loader" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript skill level: 60%">
+              <div class="loader__inner--60"></div>
+            </div>
+            <small>60%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">CSS</span>
+            <div class="loader" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="CSS skill level: 50%">
+              <div class="loader__inner--50"></div>
+            </div>
+            <small>50%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">HTML</span>
+            <div class="loader" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="HTML skill level: 50%">
+              <div class="loader__inner--50"></div>
+            </div>
+            <small>50%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">SCSS</span>
+            <div class="loader" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="SCSS skill level: 40%">
+              <div class="loader__inner--40"></div>
+            </div>
+            <small>40%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">Python</span>
+            <div class="loader" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" aria-label="Python skill level: 30%">
+              <div class="loader__inner--30"></div>
+            </div>
+            <small>30%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">Selenium</span>
+            <div class="loader" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" aria-label="Selenium skill level: 30%">
+              <div class="loader__inner--30"></div>
+            </div>
+            <small>30%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">COBOL</span>
+            <div class="loader" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" aria-label="COBOL skill level: 10%">
+              <div class="loader__inner--10"></div>
+            </div>
+            <small>10%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">OpenCV</span>
+            <div class="loader" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" aria-label="OpenCV skill level: 10%">
+              <div class="loader__inner--10"></div>
+            </div>
+            <small>10%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">TensorFlow</span>
+            <div class="loader" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" aria-label="TensorFlow skill level: 10%">
+              <div class="loader__inner--10"></div>
+            </div>
+            <small>10%</small>
+          </li>
+          <li class="skills__item">
+            <span class="skills__item--highlight">TIBCO BusinessWorks</span>
+            <div class="loader" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" aria-label="TIBCO BusinessWorks skill level: 10%">
+              <div class="loader__inner--10"></div>
+            </div>
+            <small>10%</small>
+          </li>
         </ul>
         <small class="skills__disclaimer">Skill levels are relative and self-assessed</small>
       </section>
-      <section id="latest-projects" class="latest-projects">
-        <h2>Latest Projects</h2>
+      <section id="latest-projects" class="latest-projects" aria-labelledby="latest-projects-heading">
+        <h2 id="latest-projects-heading">Latest Projects</h2>
         <section class="latest-projects__cards">
           <article class="card">
             <section class="card__image">
-              <img src="img/js-and-the-dom-logo.webp" alt="JavaScript and the DOM project logo depicting a clipboard with a resume on it, writing utensils and coffee cups">
+              <img src="img/js-and-the-dom-logo.webp" alt="Project logo depicting a clipboard with a resume on it, writing utensils and coffee cups">
             </section>
             <section class="card__content">
               <h3>JavaScript and the DOM</h3>
@@ -79,7 +170,7 @@
           </article>
           <article class="card">
             <section class="card__image">
-              <img src="img/web-development-essentials-logo.png" alt="Web Development Essentials project logo depicting a cat and dog minimalistic drawing">
+              <img src="img/web-development-essentials-logo.png" alt="Project logo depicting a cat and dog minimalistic drawing">
             </section>
             <section class="card__content">
               <h3>Web Development Essentials</h3>
@@ -88,7 +179,7 @@
           </article>
           <article class="card">
             <section class="card__image">
-              <img src="img/project_logo.jpg" alt="Current project logo, with the word Cláudia between colorful brackets">
+              <img src="img/project_logo.jpg" alt="Project logo with the word Cláudia between colorful brackets">
             </section>
             <section class="card__content">
               <h3>Personal Portfolio</h3>
@@ -98,12 +189,12 @@
         </section>
         <a class="button" href="https://github.com/claudia-bern-martins/">Other Projects</a>
       </section>
-      <section id="resume" class="resume">
-        <h2 class="resume__title--large">Resume</h2>
+      <section id="resume" class="resume" aria-labelledby="resume-heading">
+        <h2 class="resume__title--large" id="resume-heading">Resume</h2>
         <section class="resume__container">
           <section class="resume__experience">
             <h3 class="resume__title--small">Relevant Experience</h3>
-            <dl class="resume__list">
+            <dl class="list">
               <dt class="list__title">Drupal 9/10 developer</dt>
               <dd class="list__entry--normal">Drupal, PHP</dd>
               <dd class="list__entry--emphasis">2021/08 - now</dd>
@@ -123,7 +214,7 @@
           </section>
           <section class="resume__education">
             <h3 class="resume__title--small">Relevant Education</h3>
-            <dl class="resume__list">
+            <dl class="list">
               <dt class="list__title">MSc in Informatics Engineering</dt>
               <dd class="list__entry--normal">Faculty of Sciences of the University of Lisbon (FCUL), Portugal</dd>
               <dd class="list__entry--emphasis">2016-2020</dd>
@@ -132,7 +223,7 @@
               <dd class="list__entry--emphasis">2013-2016</dd>
             </dl>
             <h3 class="resume__title--small">Other Education</h3>
-            <dl class="resume__list">
+            <dl class="list">
               <dt class="list__title">MSc in Medicinal Chemistry</dt>
               <dd class="list__entry--normal">Faculty of Pharmacy of the University of Lisbon (FFUL), Portugal</dd>
               <dd class="list__entry--emphasis">2011-2013</dd>
@@ -143,14 +234,14 @@
           </section>
         </section>
         <section class="resume__download">
-          <a class="button" href="files/ClaudiaMartins_Resume.pdf" download>Download my full resume here</a>
+          <a class="button" href="files/ClaudiaMartins_Resume.pdf" download aria-label="Download my full resume here (PDF format, opens in new tab)">Download my full resume here</a>
         </section>
       </section>
-      <section class="contact" id="contact">
-        <h2>Contact Me</h2>
+      <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Me</h2>
         <p>If you would like to get in touch, please fill out the form below:</p>
         <small>(All fields are required)</small>
-        <form id="form" class="contact__form" action="https://formspree.io/f/mgebjvwp" method="POST">
+        <form id="form" class="form" method="POST">
           <section class="form__personal-info">
             <label class="form__label" for="name">Name</label>
             <input class="form__input" type="text" id="name" name="name" required>
@@ -164,7 +255,7 @@
       </section>
     </main>
     <footer class="footer">
-      <p>&copy; Ana Cláudia B. Martins 2025</p>
+      <small>&copy; Ana Cláudia B. Martins 2025</small>
     </footer>
   </body>
 

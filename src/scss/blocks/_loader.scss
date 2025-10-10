@@ -1,7 +1,7 @@
 @use '../utils/utils.scss';
 
 .loader {
-    border: 2px solid utils.$bg-color-light; //TODO: review colors
+    border: 2px solid utils.$bg-color-light;
     width: 200px;
     height: 20px;
     border-radius: 10px;
@@ -11,13 +11,13 @@
     }
 
     &__inner {
-        @for $i from 0 through 100 {
+        @for $i from 10 through 100 {
             @if $i % 10==0 {
                 &--#{$i} {
                     width: #{$i + '%'};
                     height: 100%;
                     border-radius: 10px;
-                    background-color: utils.$border-color-light; //TODO: review colors
+                    background-color: utils.$border-color-light;
                     border: 1px solid utils.$font-color-light;
                     animation: loading#{$i} 5s ease-in-out infinite;
 

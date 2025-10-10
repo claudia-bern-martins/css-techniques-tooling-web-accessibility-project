@@ -1,13 +1,8 @@
 @use "../utils/utils.scss";
 
 .footer {
-    background-color: utils.$primary-bg-color-light;
-    display: flex;
-    justify-content: center;
-    font-size: smaller;
+    @include utils.primary-background-color();
+    @include utils.flex-center();
     font-weight: bold;
-
-    @media(prefers-color-scheme: dark) {
-        background-color: utils.$primary-bg-color-dark;
-    }
+    padding: 1.5rem 0;
 }

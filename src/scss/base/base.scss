@@ -1,21 +1,17 @@
 @use '../utils/utils.scss';
 
+* {
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+}
+
 body {
     margin: 0;
     width: 100%;
-    font-family: 'Montserrat', 'Raleway', sans-serif;
-    scroll-snap-type: y mandatory;
-    scroll-margin-top: 180px !important;
-    scroll-padding-top: 180px !important;
-
 }
 
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p,
 a,
 dt,
@@ -24,17 +20,29 @@ li,
 span,
 small,
 label {
-    color: utils.$font-color-light;
-
-    @media(prefers-color-scheme: dark) {
-        color: utils.$font-color-dark;
-    }
+    @include utils.font-color();
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    font-family: 'Montserrat', 'Raleway', sans-serif;
     font-size: 0.8rem;
     padding: 5px;
+
+    @include utils.tertiary-background-color();
+    @include utils.font-color();
+
+    border-color: utils.$font-color-light;
+
+    @media(prefers-color-scheme: dark) {
+        border-color: utils.$font-color-dark;
+    }
+}
+
+$ids: "#skills", "#latest-projects", "#resume", "#contact";
+
+@each $id in $ids {
+    #{$id} {
+        @include utils.scroll-adjustments();
+    }
 }

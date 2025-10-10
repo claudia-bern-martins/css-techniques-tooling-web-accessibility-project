@@ -1,32 +1,12 @@
-@use 'bio';
 @use "../utils/utils.scss";
 
 .intro-banner {
-    display: flex;
+    @include utils.flex-center();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
 
     &::before {
-        content: "";
-        background-image: url('../src/img/pexels-maxavans-5069519.jpg');
-        background-size: cover;
-        background-position: center;
-        opacity: 80%;
-        filter: blur(0.2em);
-        top: -0.2em;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        z-index: -1;
-
-        @media (prefers-color-scheme: dark) {
-            background-image: url('../src/img/pexels-andre-ramos-414014-2182552.jpg');
-            opacity: 100%;
-            filter: brightness(40%);
-        }
+        @include utils.stylized-background-image('../src/img/pexels-maxavans-5069519.jpg', '../src/img/pexels-andre-ramos-414014-2182552.jpg');
     }
 
     &__title {
